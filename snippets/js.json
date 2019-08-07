@@ -1,0 +1,57 @@
+{
+  "Import statement": {
+    "prefix": "impst",
+    "body": "import { $2 } from '$1';",
+    "description": "Import statement"
+  },
+  "One line arrow function": {
+    "prefix": "af",
+    "body": "() => $1",
+    "description": "One line anynomous arrow function"
+  },
+  "Arrow function": {
+    "prefix": "afn",
+    "body": ["($1) =>{", "  $2", "}"],
+    "description": "Anynomous arrow function"
+  },
+  "Asynchronous arrow function": {
+    "prefix": "aafn",
+    "body": ["async () => {", "  $1", "};"],
+    "description": "Asynchronous arrow function"
+  },
+  "Testing it function": {
+    "prefix": "tit",
+    "body": ["it('$1', () => {", "  $2", "});"],
+    "description": "It test function"
+  },
+  "Testing asynchronous it function": {
+    "prefix": "tita",
+    "body": ["it('$1', async () => {", "  $2", "});"],
+    "description": "Asynchronous it test function"
+  },
+  "Testing description function": {
+    "prefix": "tde",
+    "body": ["describe('$1', () => {", "  $2", "});"],
+    "description": "Testing description function"
+  },
+  "Testing before hook": {
+    "prefix": "tbf",
+    "body": ["before(() => {", "  $1", "});"],
+    "description": "Testing before hook"
+  },
+  "Testing asynchronous before hook": {
+    "prefix": "tbfa",
+    "body": ["before(async () => {", "  $1", "});"],
+    "description": "Testing asynchronous before hook"
+  },
+  "Testing after hook": {
+    "prefix": "taf",
+    "body": ["after(() => {", "  $1", "});"],
+    "description": "Testing after hook"
+  },
+  "Testing asynchronous after hook": {
+    "prefix": "tafa",
+    "body": ["after(async () => {", "  $1", "});"],
+    "description": "Testing asynchronous after hook"
+  }
+}
